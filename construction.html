@@ -21,16 +21,17 @@ img{
 .gallery{
     display:flex;
     justify-content:center;
-    gap:20px;
+    align-items:flex-start;
+    gap:30px;
     flex-wrap:wrap;
     margin-top:20px;
 }
 
 .photo{
+    width:350px;
     text-align:center;
-    overflow:hidden;
+    margin-bottom:30px;
 }
-
 .photo p{
     font-weight:bold;
 }
@@ -50,12 +51,11 @@ h2{
     box-shadow:0 4px 12px rgba(0,0,0,0.25);
 }
 
-.photo img:hover {
-    transform: scale(1.03);
+.photo img:hover{
+    transform:scale(1.03);
+    cursor:pointer;
 }
-.photo {
-    overflow: hidden;
-}
+
 </style>
 
 </head>
