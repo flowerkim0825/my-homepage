@@ -35,6 +35,11 @@ img{
     margin-bottom:30px;
     position:relative;
     overflow:hidden;
+    background:white;
+    border-radius:15px;
+    padding:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
 }
 .photo .caption{
     position:absolute;
@@ -49,10 +54,13 @@ img{
     box-sizing:border-box;
 }
 
-.photo:hover .caption{
-    opacity:1;
+.photo:hover {
+  
       transform:translateY(-8px);
     box-shadow:0 15px 30px rgba(0,0,0,0.25);
+}
+.photo:hover .caption{
+    opacity:1;
 }
 .photo p{
     font-weight:bold;
