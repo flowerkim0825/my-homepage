@@ -186,7 +186,12 @@ function showImage(imageSrc) {
 
 function showInfo() {
     const info = document.getElementById("info");
-    info.style.display = "block";
+
+    if (info.style.display === "none") {
+        info.style.display = "block";
+    } else {
+        info.style.display = "none";
+    }
 }
 
 </script>
