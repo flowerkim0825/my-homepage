@@ -186,11 +186,14 @@ function showImage(imageSrc) {
 
 function showInfo() {
     const info = document.getElementById("info");
+    const infoButton = document.getElementById("infoButton");
 
     if (info.style.display === "none") {
         info.style.display = "block";
+        infoButton.textContent = "설명 숨기기";
     } else {
         info.style.display = "none";
+        infoButton.textContent = "설명 보기";
     }
 }
 
