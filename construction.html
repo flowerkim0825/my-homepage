@@ -146,7 +146,14 @@ button:active{
 </div>
 
 
-<button onclick="showInfo()">설명 보기</button>
+ <div class="button-box">
+    <button onclick="showInfo('info1')">설명 보기</button>
+    </div>
+
+<p id="info1" style="display:none;">
+    버림 콘크리트는 기초 철근 배근과 콘크리트 타설 전에 작업면을 평탄하게 만들고,
+    철근의 오염을 방지하기 위해 타설하는 콘크리트입니다.
+</p>
     <p id="info" style="display:none;">
     버림 콘크리트는 기초 철근 배근과 콘크리트 타설 전에 작업면을 평탄하게 만들고,
     철근의 오염을 방지하기 위해 타설하는 콘크리트입니다.
@@ -166,7 +173,7 @@ button:active{
 </div>
     <div class="button-box">
     <button onclick="showInfo('info2')">설명 보기</button>
-
+    </div>
 
 <p id="info2" style="display:none;">
     ⊙ 기초 철근 배근<br>
@@ -187,7 +194,7 @@ button:active{
 </div>
     <div class="button-box">
     <button onclick="showInfo('info3')">설명 보기</button>
-
+    </div>
 
 <p id="info3" style="display:none;">
     ⊙ 기초 콘크리트 타설<br>
