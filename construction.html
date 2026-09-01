@@ -154,10 +154,7 @@ button:active{
     버림 콘크리트는 기초 철근 배근과 콘크리트 타설 전에 작업면을 평탄하게 만들고,
     철근의 오염을 방지하기 위해 타설하는 콘크리트입니다.
 </p>
-    <p id="info" style="display:none;">
-    버림 콘크리트는 기초 철근 배근과 콘크리트 타설 전에 작업면을 평탄하게 만들고,
-    철근의 오염을 방지하기 위해 타설하는 콘크리트입니다.
-</p>
+
 
 </div>
 
@@ -256,17 +253,16 @@ function showImage(imageSrc) {
     };
 }
 
-function showInfo() {
-    const info = document.getElementById("info");
-    const infoButton = document.getElementById("infoButton");
+function showInfo(infoId) {
+
+    const info = document.getElementById(infoId);
 
     if (info.style.display === "none") {
         info.style.display = "block";
-        infoButton.textContent = "설명 숨기기";
     } else {
         info.style.display = "none";
-        infoButton.textContent = "설명 보기";
     }
+
 }
 
 </script>
